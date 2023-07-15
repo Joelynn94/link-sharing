@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 :root {
+  --border-color: #d9d9d9;
+  --dark-gray: #333333;
+  --gray: #737373;
+  --light-gray: #fafafa;
+  --light-purple: #efebff;
+  --purple: #633cff;
+  --purple-hover: #beadff;
+  --red: #ff3939;
+  --white: #ffffff;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -17,11 +26,64 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* Heading XL */
+h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+/* Heading L */
+h2 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+/* Heading M */
+h3 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+/* Heading S */
+h4 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+
+/* Heading XS */
+h5 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+/* Heading XXS */
+h6 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+small {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
 }
