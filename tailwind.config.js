@@ -15,6 +15,16 @@ module.exports = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      boxShadow: {
+        custom: "0px 0px 32px 0px rgba(99, 60, 255, 0.25)",
+      },
+      colors: {
+        primary: {
+          500: "#633CFF",
+          300: "#beadff",
+          50: "#efebff",
+        },
+      },
     },
   },
   plugins: [],
