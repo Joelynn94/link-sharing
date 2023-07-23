@@ -13,36 +13,43 @@ export default function DashboardLayout({
 
   const isActiveLink = (href: string) => {
     if (pathname?.startsWith(href)) {
-      return "bg-purple-100 text-purple-500";
+      return "bg-primary-50 text-primary-500";
     } else {
-      return "text-gray-500 hover:text-purple-500";
+      return "text-gray-500 hover:text-primary-500";
     }
   };
 
   return (
     <section>
-      <nav className="bg-white rounded-md p-5 mb-4">
+      <nav className="bg-white rounded-md p-4 mb-4">
         <div className="flex flex-wrap items-center justify-between grow">
-          <Link href="/" className="hidden md:flex items-center">
-            <Image
-              src="/logo-devlinks-large.svg"
-              alt="devlinks Logo"
-              width={150}
-              height={150}
-            />
-          </Link>
-          <Link href="/" className="flex items-center md:hidden ">
-            <Image
-              src="/logo-devlinks-small.svg"
-              alt="devlinks Logo"
-              width={40}
-              height={40}
-            />
-          </Link>
+          <div className="hidden md:flex">
+            <Link href="/" className="hidden md:flex items-center">
+              <Image
+                src="/logo-devlinks-large.svg"
+                alt="devlinks Logo"
+                width={150}
+                height={150}
+              />
+            </Link>
+          </div>
+          <div className="flex">
+            <Link
+              href="/"
+              className="flex flex-grow justify-start items-center md:hidden mr-4"
+            >
+              <Image
+                src="/logo-devlinks-small.svg"
+                alt="devlinks Logo"
+                width={40}
+                height={40}
+              />
+            </Link>
+          </div>
           <div className="flex">
             <Link
               href="/dashboard/links"
-              className={`flex flex-grow items-center px-6 py-2 rounded-md ${isActiveLink(
+              className={`flex flex-grow items-center px-6 py-3 rounded-md ${isActiveLink(
                 "/dashboard/links"
               )}`}
             >
@@ -59,7 +66,7 @@ export default function DashboardLayout({
             </Link>
             <Link
               href="/dashboard/profile"
-              className={`flex items-center px-6 py-2 rounded-md ${isActiveLink(
+              className={`flex items-center px-6 py-3 rounded-md ${isActiveLink(
                 "/dashboard/profile"
               )}`}
             >
@@ -78,7 +85,7 @@ export default function DashboardLayout({
           <div className="flex">
             <Link
               href="/dashboard/preview"
-              className="px-3 py-2 rounded-md border-solid border-2 border-purple-500 hover:bg-purple-100 text-purple-500"
+              className="px-4 py-2 rounded-md border-solid border-2 border-primary-500 hover:bg-primary-50 text-primary-500"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
