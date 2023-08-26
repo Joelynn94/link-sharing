@@ -8,27 +8,32 @@ import { LinkDetails } from "@/components/LinkDetails";
 
 export default function Links() {
   return (
-    <div className="px-4 pb-4">
-      <Card>
-        <CardBody>
-          <h1 className="text-2xl mb-2">Customize your links</h1>
-          <p className="text-gray-400">
-            Add/edit/remove links below and then share all your profiles with
-            the world!
-          </p>
+    <Card>
+      <CardBody>
+        <h1 className="text-2xl mb-2">Customize your links</h1>
+        <p className="text-gray-400">
+          Add/edit/remove links below and then share all your profiles with the
+          world!
+        </p>
 
-          <AddLink />
-          <LinkDetails />
-          <LinksEmpty />
-        </CardBody>
+        <AddLink />
+        {/* <LinkDetails /> */}
+        <LinksEmpty />
+      </CardBody>
 
-        <CardFooter>
-          <Button type="button" variant="primary" fullWidth={true}>
+      <CardFooter>
+        <div className="flex md:justify-end">
+          <Button
+            type="button"
+            variant="primary"
+            className="w-full md:w-fit"
+            disabled
+          >
             Save
           </Button>
-        </CardFooter>
-      </Card>
-    </div>
+        </div>
+      </CardFooter>
+    </Card>
   );
 }
 

@@ -26,23 +26,36 @@ export const LinkDetails = (props: Props) => {
           </button>
         </div>
         <div className="flex flex-col mt-2 mb-3">
-          <label className="text-sm  mb-1">Platform</label>
-          <select>
-            <option value="linkedin">LinkedIn</option>
-            <option value="twitter">Twitter</option>
-            <option value="github">GitHub</option>
-            <option value="devto">Dev.to</option>
-            <option value="gitlab">GitLab</option>
-            <option value="youtube">YouTube</option>
-            <option value="facebook">Facebook</option>
-            <option value="twitch">Twitch</option>
-            <option value="codewars">Codewars</option>
-            <option value="codepen">Codepen</option>
-            <option value="freecodecamp">FreeCodeCamp</option>
-            <option value="hashnode">Hashnode</option>
-            <option value="frontendmentor">Frontend Mentor</option>
-            <option value="stackoverflow">Stack Overflow</option>
-          </select>
+          <label className="text-sm mb-1">Platform</label>
+          <div className="relative">
+            <select className="form-input border-2 border-gray-200 rounded-md py-3 px-4 pl-9 bg-white placeholder-gray-400 text-gray-900 appearance-none w-full block focus:outline-none focus:ring-2 focus:ring-primary-500 focus:shadow-custom">
+              <option value="linkedin">LinkedIn</option>
+              <option value="twitter">Twitter</option>
+              <option value="github">GitHub</option>
+              <option value="devto">Dev.to</option>
+              <option value="gitlab">GitLab</option>
+              <option value="youtube">YouTube</option>
+              <option value="facebook">Facebook</option>
+              <option value="twitch">Twitch</option>
+              <option value="codewars">Codewars</option>
+              <option value="codepen">Codepen</option>
+              <option value="freecodecamp">FreeCodeCamp</option>
+              <option value="hashnode">Hashnode</option>
+              <option value="frontendmentor">Frontend Mentor</option>
+              <option value="stackoverflow">Stack Overflow</option>
+            </select>
+            <div className="absolute inset-y-0 right-0 pr-5 flex items-center pointer-events-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="9"
+                fill="none"
+                viewBox="0 0 14 9"
+              >
+                <path stroke="#633CFF" strokeWidth="2" d="m1 1 6 6 6-6" />
+              </svg>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col mt-2">
           <label className="relative block mb-1">
