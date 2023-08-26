@@ -14,12 +14,12 @@ export default function Profile() {
 
         <Card bg="gray-50" className="mt-10">
           <CardBody>
-            <div className="grid md:grid-cols-12 gap-4 items-center">
-              <div className="md:col-span-6">
+            <div className="grid md:grid-cols-12 gap-4 lg:gap-2 items-center">
+              <div className="md:col-span-6 lg:col-span-4">
                 <h6 className="mb-3">Profile picture</h6>
               </div>
 
-              <div className="md:col-span-4">
+              <div className="md:col-span-4 lg:col-span-6">
                 <div className="flex flex-col items-center justify-center rounded-md bg-primary-50 text-primary-500 p-8">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,30 +48,30 @@ export default function Profile() {
           <CardBody>
             <form>
               <div className="mb-3 grid md:grid-cols-12 gap-4 items-center">
-                <label className="block mb-2 text-sm font-medium md:col-span-6">
+                <label className="block mb-2 text-sm font-medium md:col-span-6 lg:col-span-4">
                   First Name*
                 </label>
                 <input
                   type="text"
-                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6"
+                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6 lg:col-span-8"
                 />
               </div>
               <div className="mb-3 grid md:grid-cols-12 gap-4 items-center">
-                <label className="block mb-2 text-sm font-medium md:col-span-6">
+                <label className="block mb-2 text-sm font-medium md:col-span-6 lg:col-span-4">
                   Last Name*
                 </label>
                 <input
                   type="text"
-                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6"
+                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6 lg:col-span-8"
                 />
               </div>
               <div className="mb-3 grid md:grid-cols-12 gap-4 items-center">
-                <label className="block mb-2 text-sm font-medium md:col-span-6">
+                <label className="block mb-2 text-sm font-medium md:col-span-6 lg:col-span-4">
                   Email*
                 </label>
                 <input
                   type="email"
-                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6"
+                  className="bg-white border outline-none border-gray-300 text-gray-700 text-sm rounded-lg focus:border-primary-500 focus:ring-4 ring-primary-300 focus:shadow-md block w-full p-2.5 md:col-span-6 lg:col-span-8"
                 />
               </div>
             </form>

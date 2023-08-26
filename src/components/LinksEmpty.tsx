@@ -6,7 +6,7 @@ type Props = {};
 
 export const LinksEmpty = (props: Props) => {
   return (
-    <Card bg="gray-50 mt-10">
+    <Card bg="gray-50 mt-8">
       <div className="md:px-8">
         <CardBody align="center" className="mt-6">
           <svg

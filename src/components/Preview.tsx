@@ -7,7 +7,7 @@ type Props = {};
 export const Preview = (props: Props) => {
   return (
     <div className="hidden lg:block">
-      <Card className="h-full">
+      <Card className="h-full p-6">
         <div className="flex items-center justify-center h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
