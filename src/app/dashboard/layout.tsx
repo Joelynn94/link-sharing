@@ -1,5 +1,6 @@
 "use client";
 
+import { Preview } from "@/components/Preview";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -102,7 +103,11 @@ export default function DashboardLayout({
           </div>
         </div>
       </nav>
-      {children}
+
+      <div className="lg:grid lg:grid-cols-2 lg:gap-3">
+        <Preview />
+        {children}
+      </div>
     </section>
   );
 }
